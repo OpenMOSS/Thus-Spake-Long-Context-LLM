@@ -14,7 +14,7 @@ Read this is in [English](./README.md).
 > 如果您希望将您的论文或任何修改内容加入到此调研和仓库中，请随时提出问题或发送电子邮件至 xrliu24@m.fudan.edu.cn。我们真诚地感谢您的合作！
 > 如果您认为我们的调研对您的研究有帮助，请考虑引用以下论文：
 
-## 更新
+## 新闻
 - [2025.03.12] 🎉🎉🎉 我们收集了调研中提到的论文和博客并更新在[github仓库](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/)中。
 - [2025.02.27] 🎉🎉🎉 我们在bilibili发布了关于我们综述的[报告视频](https://www.bilibili.com/video/BV11h9AYoEYj/)。
 - [2025.02.26] 🎉🎉🎉 我们在github发布了[报告PPT](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/report_ppt-v250227-zh.pdf)。
@@ -25,7 +25,7 @@ Read this is in [English](./README.md).
 ## 目录
 
 - [长上下文大语言模型如是说](#长上下文大语言模型如是说)
-  - [更新](#更新)
+  - [新闻](#新闻)
   - [目录](#目录)
   - [论文列表](#论文列表)
     - [综述和技术报告](#综述和技术报告)

@@ -30,19 +30,19 @@
 }
 ```
 
-## Updates
+## News
 
 - [2025.03.12] 🎉🎉🎉 We collect papers and blogs mentioned in the survey.
 - [2025.02.27] 🎉🎉🎉 We release a introducing video about our survey on [bilibili](https://www.bilibili.com/video/BV11h9AYoEYj/).
 - [2025.02.26] 🎉🎉🎉 We release the report ppt on [github](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/report_ppt-v250227-zh.pdf).
-- [2025.02.25] 🎉🎉🎉 Our paper reveices the 1# paper of the day on huggingface.
+- [2025.02.25] 🎉🎉🎉 Our paper reveices the #1 paper of the day on huggingface.
 - [2025.02.24] 🎉🎉🎉 We release the first version of the paper on [arXiv](https://arxiv.org/pdf/2502.17129) and [huggingface](https://huggingface.co/papers/2502.17129).
 - [2025.01.29] 🎉🎉🎉 We release the first version of the paper on [github](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/Thus_Spake_Long_Context_LLM-v1.pdf).
 
 ## Table of Contents
 
 - [Thus Spake Long-Context Large Language Model](#thus-spake-long-context-large-language-model)
-  - [Updates](#updates)
+  - [News](#news)
   - [Table of Contents](#table-of-contents)
   - [Paper List](#paper-list)
     - [Survey \& Technical Report](#survey--technical-report)

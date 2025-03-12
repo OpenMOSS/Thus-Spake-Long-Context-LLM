@@ -42,6 +42,8 @@
 - [Thus Spake Long-Context Large Language Model](#thus-spake-long-context-large-language-model)
   - [Updates](#updates)
   - [Table of Contents](#table-of-contents)
+  - [Paper List](#paper-list)
+    - [Survey \& Technical Report](#survey--technical-report)
     - [Architecture](#architecture)
       - [Length Extrapolation](#length-extrapolation)
       - [Kv Cache Optimization](#kv-cache-optimization)
@@ -57,6 +59,11 @@
     - [Evaluation](#evaluation)
       - [Long-Context Evaluation](#long-context-evaluation)
       - [Unanswered Question](#unanswered-question)
+
+
+## Paper List
+
+### Survey & Technical Report
 * **[Advancing transformer architecture in long-context large language models: A comprehensive survey.](https://arxiv.org/abs/2311.12351)** Yunpeng Huang, Jingwei Xu, Junyu Lai, Zixu Jiang, Taolue Chen, Zenan Li, Yuan Yao, Xiaoxing Ma, Lijuan Yang, Hao Chen, others. arXiv preprint arXiv:2311.12351, 2023
 
 * **[Length extrapolation of transformers: A survey from the perspective of position encoding.](https://arxiv.org/abs/2312.17044)** Liang Zhao, Xiaocheng Feng, Xiachong Feng, Bin Qin, Ting Liu. arXiv preprint arXiv:2312.17044, 2023

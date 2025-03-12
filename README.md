@@ -1,4 +1,11 @@
 # 长上下文大语言模型如是说
+<div align="center">
+ <p align="center">
+
+   <a href="https://arxiv.org/abs/2502.17129">📝 Paper</a> | <a href="#Updates">📄 List</a> | <a href="https://huggingface.co/papers/2502.17129">🤗HF</a>
+
+</p>
+</div>
 
 Read this is in [English](./README_en.md).
 

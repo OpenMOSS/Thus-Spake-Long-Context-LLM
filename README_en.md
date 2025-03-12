@@ -8,6 +8,8 @@
 </p>
 </div>
 
+阅读[中文](./README.md)版本
+
 > This repository provides a collection of papers and resources focused on long-context LLMs, including architecture, infrastructure, training, and evaluation. For a clear taxonomy and more insights about the methodology, you can refer to our survey: [Thus Spake Long-Context Large Language Model](https://arxiv.org/pdf/2502.17129). In this survey, we give a global picture of the lifecycle of long-context LLMs from four perspectives: **architecture**, **infrastructure**, **training**, and **evaluation**, including **length extrapolation**, **cache optimization**, **memory management**, **architecture innovation**, **training infrastructure**, **inference infrastructure**, **long-context pre-training**, **long-context post-training**, **long-context MLLM (mainly long VideoLLM)**, and **long-context evaluation**, showcasing the full spectrum of long-context technologies. At the end of this survey, we present 10 **unanswered questions** currently faced by long-context LLMs.
 > 
 > We appreciate any useful suggestions for improvement of this paper list or survey from peers and commit to regularly updating the repository.

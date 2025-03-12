@@ -1,5 +1,4 @@
-# Thus Spake Long-Context Large Language Model
-
+# 长上下文大语言模型如是说
 <div align="center">
  <p align="center">
 
@@ -8,64 +7,49 @@
 </p>
 </div>
 
-阅读[中文](./README.md)版本
+Read this is in [English](./README.md).
 
-> This repository provides a collection of papers and resources focused on long-context LLMs, including architecture, infrastructure, training, and evaluation. For a clear taxonomy and more insights about the methodology, you can refer to our survey: [Thus Spake Long-Context Large Language Model](https://arxiv.org/pdf/2502.17129). In this survey, we give a global picture of the lifecycle of long-context LLMs from four perspectives: **architecture**, **infrastructure**, **training**, and **evaluation**, including **length extrapolation**, **cache optimization**, **memory management**, **architecture innovation**, **training infrastructure**, **inference infrastructure**, **long-context pre-training**, **long-context post-training**, **long-context MLLM (mainly long VideoLLM)**, and **long-context evaluation**, showcasing the full spectrum of long-context technologies. At the end of this survey, we present 10 **unanswered questions** currently faced by long-context LLMs.
-> 
-> We appreciate any useful suggestions for improvement of this paper list or survey from peers and commit to regularly updating the repository.
-> 
-> If you would like to include your paper or any modifications in this survey and repository, please feel free to raise issues or send an email to xrliu24@m.fudan.edu.cn. We sincerely appreciate your collaboration!
-> 
-> If you find our survey useful for your research, please consider citing the following paper:
+> 本仓库提供了一系列关于长文上下文大语言模型（LLMs）的论文和资源，涵盖了架构、框架、训练和评测等方面。有关方法论的清晰分类和更多见解，您可以参考我们的综述论文：[Thus Spake Long-Context Large Language Model](https://arxiv.org/pdf/2502.17129)。在这篇调研中，我们从**架构**、**框架**、**训练**和**评测**四个角度，全面展示了长上下文大模型的生命周期，包括**长度外推**、**高效缓存**、**记忆管理**、**新架构**、**训练框架**、**推理框架**、**长文预训练**、**长文后训练**、**多模态长文（长视频）**、**长文评测**等内容，展示了长文上下文技术的全貌。在调研的最后，我们提出了长文大模型目前面临的10个**未解答问题**。
+> 我们欢迎您宝贵的建议来改进此论文列表或调研报告，并承诺定期更新该仓库。
+> 如果您希望将您的论文或任何修改内容加入到此调研和仓库中，请随时提出问题或发送电子邮件至 xrliu24@m.fudan.edu.cn。我们真诚地感谢您的合作！
+> 如果您认为我们的调研对您的研究有帮助，请考虑引用以下论文：
 
-```bibtex
-@misc{liu2025spakelongcontextlargelanguage,
-      title={Thus Spake Long-Context Large Language Model}, 
-      author={Xiaoran Liu and Ruixiao Li and Mianqiu Huang and Zhigeng Liu and Yuerong Song and Qipeng Guo and Siyang He and Qiqi Wang and Linlin Li and Qun Liu and Yaqian Zhou and Xuanjing Huang and Xipeng Qiu},
-      year={2025},
-      eprint={2502.17129},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2502.17129}, 
-}
-```
+## 更新
+- [2025.03.12] 🎉🎉🎉 我们收集了调研中提到的论文和博客并更新在[github仓库](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/)中。
+- [2025.02.27] 🎉🎉🎉 我们在bilibili发布了关于我们综述的[报告视频](https://www.bilibili.com/video/BV11h9AYoEYj/)。
+- [2025.02.26] 🎉🎉🎉 我们在github发布了[报告PPT](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/report_ppt-v250227-zh.pdf)。
+- [2025.02.25] 🎉🎉🎉 我们的论文获得了huggingface当日论文排名第一。
+- [2025.02.24] 🎉🎉🎉 我们在[arXiv](https://arxiv.org/pdf/2502.17129)和[huggingface](https://huggingface.co/papers/2502.17129)发布了论文的第一个版本。
+- [2025.01.29] 🎉🎉🎉 我们在[github](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/Thus_Spake_Long_Context_LLM-v1.pdf)发布了论文的第一个版本。
 
-## Updates
+## 目录
 
-- [2025.03.12] 🎉🎉🎉 We collect papers and blogs mentioned in the survey.
-- [2025.02.27] 🎉🎉🎉 We release a introducing video about our survey on [bilibili](https://www.bilibili.com/video/BV11h9AYoEYj/).
-- [2025.02.26] 🎉🎉🎉 We release the report ppt on [github](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/report_ppt-v250227-zh.pdf).
-- [2025.02.25] 🎉🎉🎉 Our paper reveices the 2# paper of the day on huggingface.
-- [2025.02.24] 🎉🎉🎉 We release the first version of the paper on [arXiv](https://arxiv.org/pdf/2502.17129) and [huggingface](https://huggingface.co/papers/2502.17129).
-- [2025.01.29] 🎉🎉🎉 We release the first version of the paper on [github](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/Thus_Spake_Long_Context_LLM-v1.pdf).
-
-## Table of Contents
-
-- [Thus Spake Long-Context Large Language Model](#thus-spake-long-context-large-language-model)
-  - [Updates](#updates)
-  - [Table of Contents](#table-of-contents)
-  - [Paper List](#paper-list)
-    - [Survey \& Technical Report](#survey--technical-report)
-    - [Architecture](#architecture)
-      - [Length Extrapolation](#length-extrapolation)
-      - [Kv Cache Optimization](#kv-cache-optimization)
-      - [Memory Management](#memory-management)
-      - [Architecture Innovation](#architecture-innovation)
-    - [Infrastructure](#infrastructure)
-      - [Training Infrastructure](#training-infrastructure)
-      - [Inference Infrastructure](#inference-infrastructure)
-    - [Training](#training)
-      - [Long-Context Pre-Training](#long-context-pre-training)
-      - [Long-Context Post-Training](#long-context-post-training)
-      - [Long-Context Mllm](#long-context-mllm)
-    - [Evaluation](#evaluation)
-      - [Long-Context Evaluation](#long-context-evaluation)
-      - [Unanswered Question](#unanswered-question)
+- [长上下文大语言模型如是说](#长上下文大语言模型如是说)
+  - [更新](#更新)
+  - [目录](#目录)
+  - [论文列表](#论文列表)
+    - [综述和技术报告](#综述和技术报告)
+    - [架构](#架构)
+      - [长度外推](#长度外推)
+      - [高效缓存](#高效缓存)
+      - [记忆管理](#记忆管理)
+      - [新架构](#新架构)
+    - [框架](#框架)
+      - [训练框架](#训练框架)
+      - [推理框架](#推理框架)
+    - [训练](#训练)
+      - [长文预训练](#长文预训练)
+      - [长文后训练](#长文后训练)
+      - [多模态长文](#多模态长文)
+    - [长文评测](#长文评测)
+      - [长文评测](#长文评测-1)
+      - [未作回答的问题](#未作回答的问题)
 
 
-## Paper List
 
-### Survey & Technical Report
+## 论文列表
+
+### 综述和技术报告
 * **[Advancing transformer architecture in long-context large language models: A comprehensive survey.](https://arxiv.org/abs/2311.12351)** Yunpeng Huang, Jingwei Xu, Junyu Lai, Zixu Jiang, Taolue Chen, Zenan Li, Yuan Yao, Xiaoxing Ma, Lijuan Yang, Hao Chen, others. arXiv preprint arXiv:2311.12351, 2023
 
 * **[Length extrapolation of transformers: A survey from the perspective of position encoding.](https://arxiv.org/abs/2312.17044)** Liang Zhao, Xiaocheng Feng, Xiachong Feng, Bin Qin, Ting Liu. arXiv preprint arXiv:2312.17044, 2023
@@ -162,9 +146,9 @@
 
 * **[Pythia: A suite for analyzing large language models across training and scaling.](https://proceedings.mlr.press/v202/biderman23a.html)** Stella Biderman, Hailey Schoelkopf, Quentin Gregory Anthony, Herbie Bradley, Kyle O’Brien, Eric Hallahan, Mohammad Aflah Khan, Shivanshu Purohit, USVSN Sai Prashanth, Edward Raff, others. International Conference on Machine Learning, 2397--2430, 2023
 
-### Architecture
+### 架构
 
-#### Length Extrapolation
+#### 长度外推
 
 * **[Self-attention with relative position representations.](https://arxiv.org/abs/1803.02155)** Peter Shaw, Jakob Uszkoreit, Ashish Vaswani. arXiv preprint arXiv:1803.02155, 2018
 * **[Exploring the limits of transfer learning with a unified text-to-text transformer.](https://www.jmlr.org/papers/volume21/20-074/20-074.pdf)** Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, Peter J Liu. Journal of machine learning research, 21(140), 1--67, 2020
@@ -225,7 +209,7 @@
 * **[What is Wrong with Perplexity for Long-context Language Modeling?.](https://arxiv.org/abs/2410.23771)** Lizhe Fang, Yifei Wang, Zhaoyang Liu, Chenheng Zhang, Stefanie Jegelka, Jinyang Gao, Bolin Ding, Yisen Wang. arXiv preprint arXiv:2410.23771, 2024
 * **[Chatglm: A family of large language models from glm-130b to glm-4 all tools.](https://arxiv.org/abs/2406.12793)** Team GLM, Aohan Zeng, Bin Xu, Bowen Wang, Chenhui Zhang, Da Yin, Dan Zhang, Diego Rojas, Guanyu Feng, Hanlin Zhao, others. arXiv preprint arXiv:2406.12793, 2024
 
-#### Kv Cache Optimization
+#### 高效缓存
 
 * **[Keep the Cost Down: A Review on Methods to Optimize LLM’s KV-Cache Consumption.](https://arxiv.org/abs/2407.18003)** Shi Luohe, Hongyi Zhang, Yao Yao, Zuchao Li, others. First Conference on Language Modeling, 2024
 * **[Challenges in Deploying Long-Context Transformers: A Theoretical Peak Performance Analysis.](https://arxiv.org/abs/2405.08944)** Yao Fu. arXiv preprint arXiv:2405.08944, 2024
@@ -293,7 +277,7 @@
 * **[QJL: 1-Bit Quantized JL Transform for KV Cache Quantization with Zero Overhead.](https://arxiv.org/abs/2406.03482)** Amir Zandieh, Majid Daliri, Insu Han. arXiv preprint arXiv:2406.03482, 2024
 * **[AsymKV: Enabling 1-Bit Quantization of KV Cache with Layer-Wise Asymmetric Quantization Configurations.](https://arxiv.org/abs/2410.13212)** Qian Tao, Wenyuan Yu, Jingren Zhou. arXiv preprint arXiv:2410.13212, 2024
 
-#### Memory Management
+#### 记忆管理
 
 * **[Memorizing transformers.](https://arxiv.org/abs/2203.08913)** Yuhuai Wu, Markus N Rabe, DeLesley Hutchins, Christian Szegedy. arXiv preprint arXiv:2203.08913, 2022
 * **[Titans: Learning to memorize at test time.](https://arxiv.org/abs/2501.00663)** Ali Behrouz, Peilin Zhong, Vahab Mirrokni. arXiv preprint arXiv:2501.00663, 2024
@@ -333,7 +317,7 @@
 * **[Extending context window of large language models via semantic compression.](https://arxiv.org/abs/2312.09571)** Weizhi Fei, Xueyan Niu, Pingyi Zhou, Lu Hou, Bo Bai, Lei Deng, Wei Han. arXiv preprint arXiv:2312.09571, 2023
 * **[In-context autoencoder for context compression in a large language model.](https://arxiv.org/abs/2307.06945)** Tao Ge, Jing Hu, Lei Wang, Xun Wang, Si-Qing Chen, Furu Wei. arXiv preprint arXiv:2307.06945, 2023
 
-#### Architecture Innovation
+#### 新架构
 
 * **[Efficient Attention: Attention with Linear Complexities.](https://openaccess.thecvf.com/content/WACV2021/html/Shen_Efficient_Attention_Attention_With_Linear_Complexities_WACV_2021_paper.html)** Shen Zhuoran, Zhang Mingyuan, Zhao Haiyu, Yi Shuai, Li Hongsheng. 2021 IEEE Winter Conference on Applications of Computer Vision (WACV), 3530--3538, 2021
 * **[MoBA: Mixture of Block Attention for Long-Context LLMs.](https://arxiv.org/abs/2502.13189)** Enzhe Lu, Zhejun Jiang, Jingyuan Liu, Yulun Du, Tao Jiang, Chao Hong, Shaowei Liu, Weiran He, Enming Yuan, Yuzhi Wang, Zhiqi Huang, Huan Yuan, Suting Xu, Xinran Xu, Guokun Lai, Yanru Chen, Huabin Zheng, Junjie Yan, Jianlin Su, Yuxin Wu, Neo Y. Zhang, Zhilin Yang, Xinyu Zhou, Mingxing Zhang, Jiezhong Qiu. 2025
@@ -404,9 +388,9 @@
 * **[MixCon: A Hybrid Architecture for Efficient and Adaptive Sequence Modeling. ](https://ebooks.iospress.nl/doi/10.3233/FAIA240593)** Xin Xu, Zhouchen Lin. ECAI 2024, 1027--1034, IOS Press, 2024
 * **[MCSD: An Efficient Language Model with Diverse Fusion.](https://arxiv.org/abs/2406.12230)** Hua Yang, Duohai Li, Shiman Li. arXiv preprint arXiv:2406.12230, 2024
 
-### Infrastructure
+### 框架
 
-#### Training Infrastructure
+#### 训练框架
 
 * ​**[AI and memory wall](https://arxiv.org/abs/2403.14123)**​**.** Amir Gholami, Zhewei Yao, Sehoon Kim, Coleman Hooper, Michael W Mahoney, Kurt Keutzer. IEEE Micro, IEEE, 2024
 * **[Qwen2 Technical Report.](https://arxiv.org/abs/2407.10671)** An Yang, Baosong Yang, Binyuan Hui, Bo Zheng, Bowen Yu, Chang Zhou, Chengpeng Li, Chengyuan Li, Dayiheng Liu, Fei Huang, Guanting Dong, Haoran Wei, Huan Lin, Jialong Tang, Jialin Wang, Jian Yang, Jianhong Tu, Jianwei Zhang, Jianxin Ma, Jianxin Yang, Jin Xu, Jingren Zhou, Jinze Bai, Jinzheng He, Junyang Lin, Kai Dang, Keming Lu, Keqin Chen, Kexin Yang, Mei Li, Mingfeng Xue, Na Ni, Pei Zhang, Peng Wang, Ru Peng, Rui Men, Ruize Gao, Runji Lin, Shijie Wang, Shuai Bai, Sinan Tan, Tianhang Zhu, Tianhao Li, Tianyu Liu, Wenbin Ge, Xiaodong Deng, Xiaohuan Zhou, Xingzhang Ren, Xinyu Zhang, Xipin Wei, Xuancheng Ren, Xuejing Liu, Yang Fan, Yang Yao, Yichang Zhang, Yu Wan, Yunfei Chu, Yuqiong Liu, Zeyu Cui, Zhenru Zhang, Zhifang Guo, Zhihao Fan. arXiv preprint arXiv:2407.10671, 2024
@@ -485,7 +469,7 @@
 * **[Jetfire: Efficient and accurate transformer pretraining with int8 data flow and per-block quantization.](https://arxiv.org/abs/2403.12422)** Haocheng Xi, Yuxiang Chen, Kang Zhao, Kai Jun Teh, Jianfei Chen, Jun Zhu. arXiv preprint arXiv:2403.12422, 2024
 * **[Bitnet: Scaling 1-bit transformers for large language models.](https://arxiv.org/abs/2310.11453)** Hongyu Wang, Shuming Ma, Li Dong, Shaohan Huang, Huaijie Wang, Lingxiao Ma, Fan Yang, Ruiping Wang, Yi Wu, Furu Wei. arXiv preprint arXiv:2310.11453, 2023
 
-#### Inference Infrastructure
+#### 推理框架
 
 * **[Visualwebarena: Evaluating multimodal agents on realistic visual web tasks.](https://arxiv.org/abs/2401.13649)** Jing Yu Koh, Robert Lo, Lawrence Jang, Vikram Duvvur, Ming Chong Lim, Po-Yu Huang, Graham Neubig, Shuyan Zhou, Ruslan Salakhutdinov, Daniel Fried. arXiv preprint arXiv:2401.13649, 2024
 
@@ -581,9 +565,9 @@
 
 * **[RWKV-edge: Deeply Compressed RWKV for Resource-Constrained Devices.](https://arxiv.org/abs/2412.10856)** Wonkyo Choe, Yangfeng Ji, Felix Lin. arXiv preprint arXiv:2412.10856, 2024
 
-### Training
+### 训练
 
-#### Long-Context Pre-Training
+#### 长文预训练
 
 * **[Data Engineering for Scaling Language Models to 128K Context. ](https://arxiv.org/abs/2402.10171)** Yao Fu, Rameswar Panda, Xinyao Niu, Xiang Yue, Hannaneh Hajishirzi, Yoon Kim, Hao Peng. Forty-first International Conference on Machine Learning, 2024
 * **[Longwanjuan: Towards systematic measurement for long text quality.](https://arxiv.org/abs/2402.13583)** Kai Lv, Xiaoran Liu, Qipeng Guo, Hang Yan, Conghui He, Xipeng Qiu, Dahua Lin. arXiv preprint arXiv:2402.13583, 2024
@@ -597,7 +581,7 @@
 * **[LongSkywork: A Training Recipe for Efficiently Extending Context Length in Large Language Models.](https://arxiv.org/abs/2406.00605)** Liang Zhao, Tianwen Wei, Liang Zeng, Cheng Cheng, Liu Yang, Peng Cheng, Lijie Wang, Chenxia Li, Xuejie Wu, Bo Zhu, others. arXiv preprint arXiv:2406.00605, 2024
 * **[Untie the Knots: An Efficient Data Augmentation Strategy for Long-Context Pre-Training in Language Models.](https://arxiv.org/abs/2409.04774)** Junfeng Tian, Da Zheng, Yang Cheng, Rui Wang, Colin Zhang, Debing Zhang. arXiv preprint arXiv:2409.04774, 2024
 
-#### Long-Context Post-Training
+#### 长文后训练
 
 * **[Training With “Paraphrasing the Original Text” Teaches LLM to Better Retrieve in Long-context Tasks.](https://arxiv.org/abs/2312.11193)** Yijiong Yu, Yongfeng Huang, Zhixiao Qi, Zhe Zhou. arXiv preprint arXiv:2312.11193, 2023
 * **[LongForm: Effective Instruction Tuning with Reverse Instructions.](https://arxiv.org/abs/2304.08460)** Abdullatif K{\\"o}ksal, Timo Schick, Anna Korhonen, Hinrich Sch{\\"u}tze. arXiv preprint arXiv:2304.08460, 2023
@@ -629,7 +613,7 @@
 * **[With Greater Text Comes Greater Necessity: Inference-Time Training Helps Long Text Generation.](https://arxiv.org/abs/2401.11504)** Y Wang, D Ma, D Cai. arXiv preprint arXiv:2401.11504, 2024
 * **[Learning to (learn at test time): Rnns with expressive hidden states.](https://arxiv.org/abs/2407.04620)** Yu Sun, Xinhao Li, Karan Dalal, Jiarui Xu, Arjun Vikram, Genghan Zhang, Yann Dubois, Xinlei Chen, Xiaolong Wang, Sanmi Koyejo, others. arXiv preprint arXiv:2407.04620, 2024
 
-#### Long-Context Mllm
+#### 多模态长文
 
 * **[VideoRoPE: What Makes for Good Video Rotary Position Embedding?.](https://arxiv.org/abs/2502.05173)** Xilin Wei, Xiaoran Liu, Yuhang Zang, Xiaoyi Dong, Pan Zhang, Yuhang Cao, Jian Tong, Haodong Duan, Qipeng Guo, Jiaqi Wang, others. arXiv preprint arXiv:2502.05173, 2025
 * **[Visual instruction tuning.](https://proceedings.neurips.cc/paper_files/paper/2023/hash/6dcf277ea32ce3288914faf369fe6de0-Abstract-Conference.html)** Haotian Liu, Chunyuan Li, Qingyang Wu, Yong Jae Lee. Advances in neural information processing systems, 36, 2024
@@ -731,9 +715,9 @@
 * **[LongVALE: Vision-Audio-Language-Event Benchmark Towards Time-Aware Omni-Modal Perception of Long Videos.](https://arxiv.org/abs/2411.19772)** Tiantian Geng, Jinrui Zhang, Qingni Wang, Teng Wang, Jinming Duan, Feng Zheng. arXiv preprint arXiv:2411.19772, 2024
 * **[Neptune: The Long Orbit to Benchmarking Long Video Understanding.](https://arxiv.org/abs/2412.09582)** Arsha Nagrani, Mingda Zhang, Ramin Mehran, Rachel Hornung, Nitesh Bharadwaj Gundavarapu, Nilpa Jha, Austin Myers, Xingyi Zhou, Boqing Gong, Cordelia Schmid, others. arXiv preprint arXiv:2412.09582, 2024
 
-### Evaluation
+### 长文评测
 
-#### Long-Context Evaluation
+#### 长文评测
 
 * **[Training verifiers to solve math word problems.](https://arxiv.org/abs/2110.14168)** Karl Cobbe, Vineet Kosaraju, Mohammad Bavarian, Mark Chen, Heewoo Jun, Lukasz Kaiser, Matthias Plappert, Jerry Tworek, Jacob Hilton, Reiichiro Nakano, others. arXiv preprint arXiv:2110.14168, 2021
 * **[Compressive Transformers for Long-Range Sequence Modelling.](https://arxiv.org/abs/1911.05507)** Jack W Rae, Anna Potapenko, Siddhant M Jayakumar, Chloe Hillier, Timothy P Lillicrap. International Conference on Learning Representations, 2019
@@ -818,7 +802,7 @@
 * **[A Benchmark for Long-Form Medical Question Answering.](https://arxiv.org/abs/2411.09834)** Pedram Hosseini, Jessica M Sin, Bing Ren, Bryceton G Thomas, Elnaz Nouri, Ali Farahanchi, Saeed Hassanpour. Advancements In Medical Foundation Models: Explainability, Robustness, Security, and Beyond, 2024
 * **[LongProc: Benchmarking Long-Context Language Models on Long Procedural Generation.](https://arxiv.org/abs/2501.05414)** Xi Ye, Fangcong Yin, Yinghui He, Joie Zhang, Howard Yen, Tianyu Gao, Greg Durrett, Danqi Chen. arXiv preprint arXiv:2501.05414, 2025
 
-#### Unanswered Question
+#### 未作回答的问题
 
 * **[Lost in the Middle: How Language Models Use Long Contexts.](https://aclanthology.org/2024.tacl-1.9/)** Nelson F Liu, Kevin Lin, John Hewitt, Ashwin Paranjape, Michele Bevilacqua, Fabio Petroni, Percy Liang. Transactions of the Association for Computational Linguistics, 11, 157--173, 2024
 * **[Attention instruction: Amplifying attention in the middle via prompting.](https://arxiv.org/abs/2406.17095)** Meiru Zhang, Zaiqiao Meng, Nigel Collier. arXiv preprint arXiv:2406.17095, 2024

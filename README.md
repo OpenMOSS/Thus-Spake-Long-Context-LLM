@@ -3,18 +3,22 @@
 <div align="center">
  <p align="center">
 
-   <a href="https://arxiv.org/abs/2502.17129">📝 Paper</a> | <a href="#Updates">📄 List</a> | <a href="https://huggingface.co/papers/2502.17129">🤗HF</a>
+   <a href="https://arxiv.org/abs/2502.17129">📝 Paper</a> | <a href="#paper-list">📄 List</a> | <a href="https://huggingface.co/papers/2502.17129">🤗HF</a>
 
 </p>
 </div>
 
 阅读[中文](./README_zh.md)版本
 
-> This repository provides a collection of papers and resources focused on long-context LLMs, including architecture, infrastructure, training, and evaluation. For a clear taxonomy and more insights about the methodology, you can refer to our survey: [Thus Spake Long-Context Large Language Model](https://arxiv.org/pdf/2502.17129). In this survey, we give a global picture of the lifecycle of long-context LLMs from four perspectives: **architecture**, **infrastructure**, **training**, and **evaluation**, including **length extrapolation**, **cache optimization**, **memory management**, **architecture innovation**, **training infrastructure**, **inference infrastructure**, **long-context pre-training**, **long-context post-training**, **long-context MLLM (mainly long VideoLLM)**, and **long-context evaluation**, showcasing the full spectrum of long-context technologies. At the end of this survey, we present 10 **unanswered questions** currently faced by long-context LLMs.
+> This repository provides a collection of papers and resources focused on long-context LLMs, including architecture, infrastructure, training, and evaluation. For a clear taxonomy and more insights about the methodology, you can refer to our survey: [Thus Spake Long-Context Large Language Model](https://arxiv.org/abs/2502.17129). 
 > 
-> We appreciate any useful suggestions for improvement of this paper list or survey from peers and commit to regularly updating the repository.
+> In this survey, we give a global picture of the lifecycle of long-context LLMs from four perspectives: **architecture**, **infrastructure**, **training**, and **evaluation**, including **length extrapolation**, **cache optimization**, **memory management**, **architecture innovation**, **training infrastructure**, **inference infrastructure**, **long-context pre-training**, **long-context post-training**, **long-context MLLM (mainly long VideoLLM)**, and **long-context evaluation**, showcasing the full spectrum of long-context technologies. At the end of this survey, we present 10 **unanswered questions** currently faced by long-context LLMs.
+>
+> This survey is inspired by the symphonic poem, **Thus Spake Zarathustra**. *We draw an analogy between the journey of extending the context of LLM and the attempts of humans to transcend its mortality*. *We also try to combine this survey and the symphonic poem*, and make **a 36-minute video with music** to show the development of the long-context-related work. Please enjoy it in [Bilibili](https://www.bilibili.com/video/BV11h9AYoEY) or YouTube (soon).
 > 
-> If you would like to include your paper or any modifications in this survey and repository, please feel free to raise issues or send an email to xrliu24@m.fudan.edu.cn. We sincerely appreciate your collaboration!
+> We appreciate any useful suggestions for improvement of this paper list or survey from peers and commit to regularly updating the repository. If you would like to include your paper or any modifications in this survey and repository, please feel free to raise issues or send an email to xrliu24@m.fudan.edu.cn. We sincerely appreciate your collaboration!
+>
+> We would also like to mention [A Comprehensive Survey on Long Context Language Modeling](https://github.com/LCLM-Horizon/A-Comprehensive-Survey-For-Long-Context-Language-Modeling/blob/main/assets/lclm-survey.pdf) ([Github](https://github.com/LCLM-Horizon/A-Comprehensive-Survey-For-Long-Context-Language-Modeling)), a concurrent survey that provides a collection of papers and resources focused on Long Context Language Modeling. They also provide a clear taxonomy and valuable insights about long-context LLMs. More reference can also been found at [Awesome-LLM-Long-Context-Modeling](https://github.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling).
 > 
 > If you find our survey useful for your research, please consider citing the following paper:
 
@@ -32,11 +36,12 @@
 
 ## News
 
-- [2025.03.12] 🎉🎉🎉 We collect papers and blogs mentioned in the survey.
-- [2025.02.27] 🎉🎉🎉 We release a introducing video about our survey on [bilibili](https://www.bilibili.com/video/BV11h9AYoEYj/).
-- [2025.02.26] 🎉🎉🎉 We release the report ppt on [github](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/report_ppt-v250227-zh.pdf).
-- [2025.02.25] 🎉🎉🎉 Our paper reveices the #1 paper of the day on huggingface.
-- [2025.02.24] 🎉🎉🎉 We release the first version of the paper on [arXiv](https://arxiv.org/pdf/2502.17129) and [huggingface](https://huggingface.co/papers/2502.17129).
+- [2025.03.13] 🎉🤝🎉 We have a good communication with the authors of [concurrent work](https://github.com/LCLM-Horizon/A-Comprehensive-Survey-For-Long-Context-Language-Modeling), and will promote work of both parties in the future.
+- [2025.03.12] 🎉🚀🎉 We collect papers and blogs mentioned in the survey.
+- [2025.02.27] 🎉⚡🎉 We release a introducing video about our survey on [bilibili](https://www.bilibili.com/video/BV11h9AYoEYj/).
+- [2025.02.26] 🎉🚀🎉 We release the report ppt on [github](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/report_ppt-v250227-zh.pdf).
+- [2025.02.25] 🎉🔥🎉 Our paper reveices the **#1 paper of the day** on [huggingface](https://huggingface.co/papers/2502.17129).
+- [2025.02.24] 🎉🚀🎉 We release the first version of the paper on [arXiv](https://arxiv.org/pdf/2502.17129).
 - [2025.01.29] 🎉🎉🎉 We release the first version of the paper on [github](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/Thus_Spake_Long_Context_LLM-v1.pdf).
 
 ## Table of Contents
@@ -48,7 +53,7 @@
     - [Survey \& Technical Report](#survey--technical-report)
     - [Architecture](#architecture)
       - [Length Extrapolation](#length-extrapolation)
-      - [Kv Cache Optimization](#kv-cache-optimization)
+      - [KV Cache Optimization](#kv-cache-optimization)
       - [Memory Management](#memory-management)
       - [Architecture Innovation](#architecture-innovation)
     - [Infrastructure](#infrastructure)
@@ -57,11 +62,14 @@
     - [Training](#training)
       - [Long-Context Pre-Training](#long-context-pre-training)
       - [Long-Context Post-Training](#long-context-post-training)
-      - [Long-Context Mllm](#long-context-mllm)
+      - [Long-Context MLLM](#long-context-mllm)
     - [Evaluation](#evaluation)
       - [Long-Context Evaluation](#long-context-evaluation)
       - [Unanswered Question](#unanswered-question)
-
+  
+<p align="center">
+    <img src="paper_structure.png" width="54%"> <br>
+</p>
 
 ## Paper List
 
@@ -225,7 +233,7 @@
 * **[What is Wrong with Perplexity for Long-context Language Modeling?.](https://arxiv.org/abs/2410.23771)** Lizhe Fang, Yifei Wang, Zhaoyang Liu, Chenheng Zhang, Stefanie Jegelka, Jinyang Gao, Bolin Ding, Yisen Wang. arXiv preprint arXiv:2410.23771, 2024
 * **[Chatglm: A family of large language models from glm-130b to glm-4 all tools.](https://arxiv.org/abs/2406.12793)** Team GLM, Aohan Zeng, Bin Xu, Bowen Wang, Chenhui Zhang, Da Yin, Dan Zhang, Diego Rojas, Guanyu Feng, Hanlin Zhao, others. arXiv preprint arXiv:2406.12793, 2024
 
-#### Kv Cache Optimization
+#### KV Cache Optimization
 
 * **[Keep the Cost Down: A Review on Methods to Optimize LLM’s KV-Cache Consumption.](https://arxiv.org/abs/2407.18003)** Shi Luohe, Hongyi Zhang, Yao Yao, Zuchao Li, others. First Conference on Language Modeling, 2024
 * **[Challenges in Deploying Long-Context Transformers: A Theoretical Peak Performance Analysis.](https://arxiv.org/abs/2405.08944)** Yao Fu. arXiv preprint arXiv:2405.08944, 2024
@@ -629,7 +637,7 @@
 * **[With Greater Text Comes Greater Necessity: Inference-Time Training Helps Long Text Generation.](https://arxiv.org/abs/2401.11504)** Y Wang, D Ma, D Cai. arXiv preprint arXiv:2401.11504, 2024
 * **[Learning to (learn at test time): Rnns with expressive hidden states.](https://arxiv.org/abs/2407.04620)** Yu Sun, Xinhao Li, Karan Dalal, Jiarui Xu, Arjun Vikram, Genghan Zhang, Yann Dubois, Xinlei Chen, Xiaolong Wang, Sanmi Koyejo, others. arXiv preprint arXiv:2407.04620, 2024
 
-#### Long-Context Mllm
+#### Long-Context MLLM
 
 * **[VideoRoPE: What Makes for Good Video Rotary Position Embedding?.](https://arxiv.org/abs/2502.05173)** Xilin Wei, Xiaoran Liu, Yuhang Zang, Xiaoyi Dong, Pan Zhang, Yuhang Cao, Jian Tong, Haodong Duan, Qipeng Guo, Jiaqi Wang, others. arXiv preprint arXiv:2502.05173, 2025
 * **[Visual instruction tuning.](https://proceedings.neurips.cc/paper_files/paper/2023/hash/6dcf277ea32ce3288914faf369fe6de0-Abstract-Conference.html)** Haotian Liu, Chunyuan Li, Qingyang Wu, Yong Jae Lee. Advances in neural information processing systems, 36, 2024

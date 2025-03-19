@@ -9,17 +9,37 @@
 
 Read this is in [English](./README.md).
 
-> 本仓库提供了一系列关于长文上下文大语言模型（LLMs）的论文和资源，涵盖了架构、框架、训练和评测等方面。有关方法论的清晰分类和更多见解，您可以参考我们的综述论文：[Thus Spake Long-Context Large Language Model](https://arxiv.org/pdf/2502.17129)。在这篇调研中，我们从**架构**、**框架**、**训练**和**评测**四个角度，全面展示了长上下文大模型的生命周期，包括**长度外推**、**高效缓存**、**记忆管理**、**新架构**、**训练框架**、**推理框架**、**长文预训练**、**长文后训练**、**多模态长文（长视频）**、**长文评测**等内容，展示了长文上下文技术的全貌。在调研的最后，我们提出了长文大模型目前面临的10个**未解答问题**。
-> 我们欢迎您宝贵的建议来改进此论文列表或调研报告，并承诺定期更新该仓库。
-> 如果您希望将您的论文或任何修改内容加入到此调研和仓库中，请随时提出问题或发送电子邮件至 xrliu24@m.fudan.edu.cn。我们真诚地感谢您的合作！
+> 本仓库提供了一系列关于长文上下文大语言模型（LLMs）的论文和资源，涵盖了架构、框架、训练和评测等方面。有关方法论的清晰分类和更多见解，您可以参考我们的综述论文：[Thus Spake Long-Context Large Language Model](https://arxiv.org/pdf/2502.17129)。
+> 
+> 在这篇调研中，我们从**架构**、**框架**、**训练**和**评测**四个角度，全面展示了长上下文大模型的生命周期，包括**长度外推**、**高效缓存**、**记忆管理**、**新架构**、**训练框架**、**推理框架**、**长文预训练**、**长文后训练**、**多模态长文（长视频）**、**长文评测**等内容，展示了长文上下文技术的全貌。在调研的最后，我们提出了长文大模型目前面临的10个**未解答问题**。
+> 
+> 这篇综述的灵感来源于交响曲**查拉图斯特拉如是说**。 *我们将LLM扩长自身上下文的历程类比作人类对于自身有限性的突破！* *我们尝试将综述和交响曲相结合*，通过**36分钟的配乐视频**展示长文相关工作的发展历程。欢迎观看[Bilibili](https://www.bilibili.com/video/BV11h9AYoEY)。
+> 
+> 我们欢迎您宝贵的建议来改进此论文列表或调研报告，并承诺定期更新该仓库。如果您希望将您的论文或任何修改内容加入到此调研和仓库中，请随时提出问题或发送电子邮件至 xrliu24@m.fudan.edu.cn。我们真诚地感谢您的合作！
+> 
+> 我们也想向大家宣传我们的同期工作 [A Comprehensive Survey on Long Context Language Modeling](https://github.com/LCLM-Horizon/A-Comprehensive-Survey-For-Long-Context-Language-Modeling/blob/main/assets/lclm-survey.pdf) ([Github](https://github.com/LCLM-Horizon/A-Comprehensive-Survey-For-Long-Context-Language-Modeling))，也是一篇介绍长上下文大语言模型相关工作的综述。他们也提供了关于长文LLM的清晰的分类体系以及很宝贵的深入思考。更多关于长文的工作也可以参考 [Awesome-LLM-Long-Context-Modeling](https://github.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling).
+> 
 > 如果您认为我们的调研对您的研究有帮助，请考虑引用以下论文：
 
+```bibtex
+@misc{liu2025spakelongcontextlargelanguage,
+      title={Thus Spake Long-Context Large Language Model}, 
+      author={Xiaoran Liu and Ruixiao Li and Mianqiu Huang and Zhigeng Liu and Yuerong Song and Qipeng Guo and Siyang He and Qiqi Wang and Linlin Li and Qun Liu and Yaqian Zhou and Xuanjing Huang and Xipeng Qiu},
+      year={2025},
+      eprint={2502.17129},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2502.17129}, 
+}
+```
+
 ## 新闻
-- [2025.03.12] 🎉🎉🎉 我们收集了调研中提到的论文和博客并更新在[github仓库](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/)中。
-- [2025.02.27] 🎉🎉🎉 我们在bilibili发布了关于我们综述的[报告视频](https://www.bilibili.com/video/BV11h9AYoEYj/)。
-- [2025.02.26] 🎉🎉🎉 我们在github发布了[报告PPT](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/report_ppt-v250227-zh.pdf)。
-- [2025.02.25] 🎉🎉🎉 我们的论文获得了huggingface当日论文排名第一。
-- [2025.02.24] 🎉🎉🎉 我们在[arXiv](https://arxiv.org/pdf/2502.17129)和[huggingface](https://huggingface.co/papers/2502.17129)发布了论文的第一个版本。
+- [2025.03.13] 🎉🤝🎉 我们和[同期工作](https://github.com/LCLM-Horizon/A-Comprehensive-Survey-For-Long-Context-Language-Modeling)的作者进行了良好的交流，会在后续同时宣传双方的工作。
+- [2025.03.12] 🎉🚀🎉 我们收集了调研中提到的论文和博客并更新在[github仓库](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/)中。
+- [2025.02.27] 🎉⚡🎉 我们在bilibili发布了关于我们综述的[报告视频](https://www.bilibili.com/video/BV11h9AYoEYj/)。
+- [2025.02.26] 🎉🚀🎉 我们在github发布了[报告PPT](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/report_ppt-v250227-zh.pdf)。
+- [2025.02.25] 🎉🔥🎉 我们的论文获得了[huggingface](https://huggingface.co/papers/2502.17129)**当日论文排名第一**。
+- [2025.02.24] 🎉🚀🎉 我们在[arXiv](https://arxiv.org/pdf/2502.17129)发布了论文的第一个版本。
 - [2025.01.29] 🎉🎉🎉 我们在[github](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/Thus_Spake_Long_Context_LLM-v1.pdf)发布了论文的第一个版本。
 
 ## 目录
@@ -41,11 +61,13 @@ Read this is in [English](./README.md).
       - [长文预训练](#长文预训练)
       - [长文后训练](#长文后训练)
       - [多模态长文](#多模态长文)
-    - [长文评测](#长文评测)
-      - [长文评测](#长文评测-1)
+    - [评测](#评测)
+      - [长文评测](#长文评测)
       - [未作回答的问题](#未作回答的问题)
-
-
+  
+<p align="center">
+    <img src="paper_structure.png" width="54%"> <br>
+</p>
 
 ## 论文列表
 
@@ -715,7 +737,7 @@ Read this is in [English](./README.md).
 * **[LongVALE: Vision-Audio-Language-Event Benchmark Towards Time-Aware Omni-Modal Perception of Long Videos.](https://arxiv.org/abs/2411.19772)** Tiantian Geng, Jinrui Zhang, Qingni Wang, Teng Wang, Jinming Duan, Feng Zheng. arXiv preprint arXiv:2411.19772, 2024
 * **[Neptune: The Long Orbit to Benchmarking Long Video Understanding.](https://arxiv.org/abs/2412.09582)** Arsha Nagrani, Mingda Zhang, Ramin Mehran, Rachel Hornung, Nitesh Bharadwaj Gundavarapu, Nilpa Jha, Austin Myers, Xingyi Zhou, Boqing Gong, Cordelia Schmid, others. arXiv preprint arXiv:2412.09582, 2024
 
-### 长文评测
+### 评测
 
 #### 长文评测
 

@@ -36,13 +36,15 @@
 
 ## News
 
+- [2025.03.27] 🎉🔥🎉 We make a talk in wisemodel on our long-context survey and related work in FNLP. See slide in [github](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/slide-talk-250327-wisemodel-zh.pdf).
+- [2025.03.23] 🎉⚡🎉 We release the split video version in Chinese of our survey on [RedNote](https://www.xiaohongshu.com/discovery/item/67e2bda1000000001c003195?source=webshare&xhsshare=pc_web&xsec_token=ABUqyw0xwQpT9ZwtXRSRpcMQ1OKI7zswGCEYsPl3Ku4KM=&xsec_source=pc_share) .
 - [2025.03.13] 🎉🤝🎉 We have a good communication with the authors of [concurrent work](https://github.com/LCLM-Horizon/A-Comprehensive-Survey-For-Long-Context-Language-Modeling), and will promote work of both parties in the future.
-- [2025.03.12] 🎉🚀🎉 We collect papers and blogs mentioned in the survey.
-- [2025.02.27] 🎉⚡🎉 We release a introducing video about our survey on [bilibili](https://www.bilibili.com/video/BV11h9AYoEYj/).
-- [2025.02.26] 🎉🚀🎉 We release the report ppt on [github](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/report_ppt-v250227-zh.pdf).
-- [2025.02.25] 🎉🔥🎉 Our paper reveices the **#1 paper of the day** on [huggingface](https://huggingface.co/papers/2502.17129).
+- [2025.03.12] 🎉🚀🎉 We collect papers and blogs mentioned in the survey and update it in [GitHub](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/).
+- [2025.02.27] 🎉⚡🎉 We release the complete video version in Chinese of our survey on [Bilibili](https://www.bilibili.com/video/BV11h9AYoEYj/).
+- [2025.02.26] 🎉🚀🎉 We release our slide on [GitHub](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/slide-survey-zh.pdf).
+- [2025.02.25] 🎉🔥🎉 Our paper reveices the **#1 paper of the day** on [HuggingFace](https://huggingface.co/papers/2502.17129).
 - [2025.02.24] 🎉🚀🎉 We release the first version of the paper on [arXiv](https://arxiv.org/pdf/2502.17129).
-- [2025.01.29] 🎉🎉🎉 We release the first version of the paper on [github](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/Thus_Spake_Long_Context_LLM-v1.pdf).
+- [2025.01.29] 🎉🎉🎉 We release the first version of the paper on [GitHub](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/Thus_Spake_Long_Context_LLM-v1.pdf).
 
 ## Table of Contents
 

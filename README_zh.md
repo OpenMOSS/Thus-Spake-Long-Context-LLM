@@ -34,13 +34,16 @@ Read this is in [English](./README.md).
 ```
 
 ## 新闻
+
+- [2025.03.27] 🎉🔥🎉 我们在始智AI开源talk上介绍我们的长文综述以及FNLP相关工作，并在GitHub发布了[报告PPT](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/slide-talk-250327-wisemodel-zh.pdf).
+- [2025.03.23] 🎉⚡🎉 我们在小红书上发布了综述的中文切分版[视频](https://www.xiaohongshu.com/discovery/item/67e2bda1000000001c003195?source=webshare&xhsshare=pc_web&xsec_token=ABUqyw0xwQpT9ZwtXRSRpcMQ1OKI7zswGCEYsPl3Ku4KM=&xsec_source=pc_share) .
 - [2025.03.13] 🎉🤝🎉 我们和[同期工作](https://github.com/LCLM-Horizon/A-Comprehensive-Survey-For-Long-Context-Language-Modeling)的作者进行了良好的交流，会在后续同时宣传双方的工作。
-- [2025.03.12] 🎉🚀🎉 我们收集了调研中提到的论文和博客并更新在[github仓库](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/)中。
-- [2025.02.27] 🎉⚡🎉 我们在bilibili发布了关于我们综述的[报告视频](https://www.bilibili.com/video/BV11h9AYoEYj/)。
-- [2025.02.26] 🎉🚀🎉 我们在github发布了[报告PPT](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/report_ppt-v250227-zh.pdf)。
-- [2025.02.25] 🎉🔥🎉 我们的论文获得了[huggingface](https://huggingface.co/papers/2502.17129)**当日论文排名第一**。
+- [2025.03.12] 🎉🚀🎉 我们收集了调研中提到的论文和博客并更新在[GitHub](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/)中。
+- [2025.02.27] 🎉⚡🎉 我们在Bilibili发布了综述的中文完整版[视频](https://www.bilibili.com/video/BV11h9AYoEYj/)。
+- [2025.02.26] 🎉🚀🎉 我们在GitHub发布了[报告PPT](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/slide-survey-zh.pdf)。
+- [2025.02.25] 🎉🔥🎉 我们的论文获得了[HuggingFace](https://huggingface.co/papers/2502.17129)**当日论文排名第一**。
 - [2025.02.24] 🎉🚀🎉 我们在[arXiv](https://arxiv.org/pdf/2502.17129)发布了论文的第一个版本。
-- [2025.01.29] 🎉🎉🎉 我们在[github](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/Thus_Spake_Long_Context_LLM-v1.pdf)发布了论文的第一个版本。
+- [2025.01.29] 🎉🎉🎉 我们在[GitHub](https://github.com/OpenMOSS/Thus-Spake-Long-Context-LLM/blob/main/Thus_Spake_Long_Context_LLM-v1.pdf)发布了论文的第一个版本。
 
 ## 目录
 
